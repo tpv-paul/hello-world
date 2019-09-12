@@ -1,0 +1,17 @@
+[
+    [
+        {
+            "LOOKUP": "product.fuel_raw"
+        },
+        "NE",
+        "dual"
+    ],
+    "AND",
+    [
+        {
+            "LOOKUP": "product.type_raw"
+        },
+        "EQ",
+        "variable"
+    ]
+]
